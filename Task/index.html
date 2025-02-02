@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures proper rendering on mobile devices -->
+    <title>Drag and Drop Table with Colors</title>
+    <!-- Sets the title of the webpage that appears in the browser tab -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Links to an external CSS file for styling the page -->
+  </head>
+  <body>
+    <h1>Drag and Drop Table with Unique Colored Boxes</h1>
+    <!-- Main heading for the table -->
+
+    <table id="dragDropTable">
+      <!-- Creates a table element with an ID for scripting -->
+      <tbody>
+        <!-- Table body containing rows and cells -->
+        <tr>
+          <!-- A table row -->
+          <td>
+            <!-- A table cell -->
+            <div class="box" draggable="true" id="box100">100</div>
+            <!-- A draggable box with a unique ID and display value -->
+          </td>
+          <td>
+            <div class="box" draggable="true" id="box200">200</div>
+          </td>
+          <td>
+            <div class="box" draggable="true" id="box300">300</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="box" draggable="true" id="box400">400</div>
+          </td>
+          <td>
+            <div class="box" draggable="true" id="box500">500</div>
+          </td>
+          <td>
+            <div class="box" draggable="true" id="box600">600</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="box" draggable="true" id="box700">700</div>
+          </td>
+          <td>
+            <div class="box" draggable="true" id="box800">800</div>
+          </td>
+          <td>
+            <div class="box" draggable="true" id="box900">900</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Buttons to add rows, undo, and redo actions -->
+    <button id="addRowButton">Add Row</button>
+    <!-- Button to trigger the addition of a new row in the table -->
+    <button id="undoButton">Undo</button>
+    <!-- Button to undo the last action -->
+    <button id="redoButton">Redo</button>
+    <!-- Button to redo the last undone action -->
+
+    <script src="script.js"></script>
+    <!-- Links to an external JavaScript file for adding interactivity -->
+  </body>
+</html>
